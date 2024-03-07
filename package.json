@@ -1,0 +1,11 @@
+{
+  "name": "support-ticket-app",
+  "version": "1.0.0",
+  "description": "An app that tracks tickets",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "author": "Alex Truong",
+  "license": "ISC"
+}
