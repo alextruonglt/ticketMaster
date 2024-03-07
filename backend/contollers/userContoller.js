@@ -75,7 +75,12 @@ const loginUser= asyncHandler(async (req, res) =>{
 // @route /api/users/ne
 // @access Praive
 const getMe = asyncHandler(async(req, res) =>{
-    res.send("me")
+    const user ={
+        id: req.user._id,
+        email: req.user.email,
+        name: req.user.name
+    }
+    res.status(200).json(user) 
 })
 
 // generate token
