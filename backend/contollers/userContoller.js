@@ -71,6 +71,13 @@ const loginUser= asyncHandler(async (req, res) =>{
     }
 )
 
+// @description Get current User
+// @route /api/users/ne
+// @access Praive
+const getMe = asyncHandler(async(req, res) =>{
+    res.send("me")
+})
+
 // generate token
 
 const generateToken = (id) =>{
@@ -81,5 +88,6 @@ const generateToken = (id) =>{
 
 module.exports = {
     registerUser, 
-    loginUser
+    loginUser,
+    getMe
 }
