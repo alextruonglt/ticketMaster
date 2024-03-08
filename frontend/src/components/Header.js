@@ -18,7 +18,7 @@ const Header = () => {
         <li>
           <Link to="/register">
             <FaUser />
-            Regiser
+            Register
           </Link>
         </li>
       </ul>

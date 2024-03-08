@@ -30,7 +30,7 @@ const Login = () => {
 
   const dispatch = useDispatch()
 
-  const { user, isLoading, isSuccess, message } = useSelector(
+  const { user, isError, isSuccess, isLoading, message } = useSelector(
     (state) => state.auth
   )
 
