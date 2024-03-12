@@ -13,7 +13,6 @@ const NewTicket = () => {
   const { isLoading, isError, isSuccess, message } = useSelector(
     (state) => state.ticket
   )
-
   const [name] = useState(user.name)
   const [email] = useState(user.email)
   const [product, setProduct] = useState("iPhone")
