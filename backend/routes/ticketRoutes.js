@@ -9,6 +9,10 @@ const {
   updateTicket,
 } = require("../contollers/ticketController")
 
+// Re-Route into note router
+const noteRouter = require("./noteRoutes")
+router.use("/:ticketId/notes", noteRouter)
+
 router.route("/").get(protect, getTickets).post(protect, createTicket)
 
 router
